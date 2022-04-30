@@ -12,7 +12,7 @@
 	<artifactId>ProjetoEcoRede</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ProjetoEcoRede</name>
-	<description>Projeto Blog Pessoal</description>
+	<description>Projeto Eco Rede</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

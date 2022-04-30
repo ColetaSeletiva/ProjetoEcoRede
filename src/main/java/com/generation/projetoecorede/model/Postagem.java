@@ -22,8 +22,12 @@ public class Postagem {
 	private Long id;
 	
 	@NotBlank(message = "O atributo título é obrigatório!")
-	@Size(min = 10, max = 1000, message = "O atributo titulo deve conter no min 10")
+	@Size(min = 5, max = 155, message = "O atributo titulo deve conter no min 10")
 	private String titulo;
+	
+	@NotBlank(message = "O atributo texto é obrigatório!")
+	@Size(min = 10, max = 1000, message = "O atributo texto deve conter no min 10")
+	private String texto;
 	
 	@Size(min = 5, max = 1000, message = "O atributo midia deve conter no min 5")
 	private String midia;
@@ -52,6 +56,14 @@ public class Postagem {
 
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
+	}
+
+	public String getTexto() {
+		return texto;
+	}
+
+	public void setTexto(String texto) {
+		this.texto = texto;
 	}
 
 	public String getMidia() {
@@ -85,16 +97,5 @@ public class Postagem {
 	public void setCurtir(Long curtir) {
 		this.curtir = curtir;
 	}
+
 }
-
-
-
-
-
-	
-	
-	
-	
-	
-	
-	
