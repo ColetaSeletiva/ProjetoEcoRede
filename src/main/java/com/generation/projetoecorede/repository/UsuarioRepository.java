@@ -6,13 +6,13 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.generation.projetoecorede.model.Tema;
+import com.generation.projetoecorede.model.Usuario;
+
 
 @Repository
-public interface TemaRepository extends JpaRepository <Tema, Long> {
+public interface UsuarioRepository extends JpaRepository <Usuario, Long> {
 	
-		
-		public List <Tema> findAllByTopicoContainingIgnoreCase(@Param("topico") String topico);
-		
-		boolean existsById(Long id);
-}
+	public List <Usuario> findAllByUsuarioContainingIgnoreCase(@Param("usuario") String usuario);
+	
+	boolean existsById(Long id);
+	}
